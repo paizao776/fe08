@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Missão G5</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .pagina {
+            display: grid;
+            grid-template-areas:
+                "cab cab cab"
+                "menu main lado"
+                "pe pe pe";
+            grid-template-columns: 1fr 2fr 1fr;
+            gap: 10px;
+            min-height: 100vh;
+        }
+
+        header {
+            grid-area: cab;
+            background-color: blue;
+            color: white;
+            padding: 20px;
+        }
+
+        nav {
+            grid-area: menu;
+            background-color: orange;
+            padding: 20px;
+        }
+
+        main {
+            grid-area: main;
+            background-color: lightgray;
+            padding: 20px;
+        }
+
+        aside {
+            grid-area: lado;
+            background-color: lightgreen;
+            padding: 20px;
+        }
+
+        footer {
+            grid-area: pe;
+            background-color: #222;
+            color: white;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="pagina">
+        <header>
+            <h1>Cabeçalho</h1>
+        </header>
+
+        <nav>
+            <h2>Menu</h2>
+            <p>Início</p>
+            <p>Sobre</p>
+            <p>Contato</p>
+        </nav>
+
+        <main>
+            <h2>Conteúdo Principal</h2>
+            <p>Bem-vindo à página!</p>
+        </main>
+
+        <aside>
+            <h2>Lateral</h2>
+            <p>Informações adicionais.</p>
+        </aside>
+
+        <footer>
+            <p>Rodapé</p>
+        </footer>
+    </div>
+
+</body>
+
+</html>

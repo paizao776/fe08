@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Missão G4</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .grade {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 16px;
+        }
+
+        .cartao {
+            background-color: lightblue;
+            padding: 25px;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        @media (min-width: 600px) {
+            .grade {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (min-width: 1000px) {
+            .grade {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Meus cartões</h1>
+
+    <div class="grade">
+        <div class="cartao">
+            <h2>Cartão pro</h2>
+            <p>Conteúdo 1</p>
+        </div>
+        <div class="cartao">
+            <h2>Cartão pro max</h2>
+            <p>Conteúdo 2</p>
+        </div>
+        <div class="cartao">
+            <h2>Cartão omega</h2>
+            <p>Conteúdo 3</p>
+        </div>
+        <div class="cartao">
+            <h2>Cartão alpha</h2>
+            <p>Conteúdo 4</p>
+        </div>
+        <div class="cartao">
+            <h2>Cartão beta</h2>
+            <p>Conteúdo 5</p>
+        </div>
+        <div class="cartao">
+            <h2>Cartão supra</h2>
+            <p>Conteúdo 6</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
